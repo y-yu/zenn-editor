@@ -18,6 +18,7 @@ const commands: { [command: string]: () => Promise<cliCommand> } = {
   'list:articles': async () =>
     await import('./list-articles').then((i) => i.exec),
   'list:books': async () => await import('./list-books').then((i) => i.exec),
+  export: async () => await import('./export').then((i) => i.exec),
 };
 
 const args = arg(

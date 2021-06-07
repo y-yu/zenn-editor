@@ -119,4 +119,25 @@ Example:
   https://zenn.dev/zenn/articles/zenn-cli-guide
 `;
 
+export const exportHelpText = `
+Command:
+  zenn export  プレビュー版の静的ファイルを出力
+
+Usage:
+  npx zenn export [options]
+
+Options:
+  --outdir    OUTDIR   出力先ディレクトリ（省略時はカレントディレクト内のout）.
+  --silent    SILENT   途中結果を表示しない（デフォルトはfalse）
+  --threads   THREADS  スレッド数
+
+  --help, -h       このヘルプを表示
+
+Example:
+  npx zenn export --outdir ./
+
+  👇  詳細
+  https://zenn.dev/zenn/articles/zenn-cli-guide
+`;
+
 export const invalidOption = `😿 不正なオプションが含まれています`;
